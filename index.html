@@ -1,72 +1,82 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Ariel's Weekly Updates</title>
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Ariel's Weekly Updates</title>
+    </head>
 
-  <body>
-    <div class="wrap">
-      <!-- heading  -->
-      <div class="head">
-        <h1 class="title">Weekly Update: Ariel - Week of February 23rd</h1>
-        <p class="subtitle">Summary of progress :D</p>
-        <div class="rule"></div>
-      </div>
+    <body>
+        <div class="wrap">
+            <!-- heading  -->
+            <div class="head">
+                <h1 class="title">
+                    Weekly Update: Ariel - Week of February 23rd
+                </h1>
+                <p class="subtitle">Summary of progress :D</p>
+                <div class="rule"></div>
+            </div>
 
-      <!-- wins -->
-      <div class="section" id="" wins>
-        <h2 class="section-label"><span class="bar"></span>Wins This Week</h2>
-        <div class="card">
-          <div class="iconBox">✨</div>
-          <div>
-            <h3>CTVB on Web Server</h3>
-            <p>
-              CTVB pages for Winter 2025 bulletin, and the main page has been
-              transferred to the web server with all the same content!
-            </p>
-            <details>
-              <summary>Additional Notes</summary>
-              <ul>
-                <li>
-                  Bottom survey form removed for simplicity - replaced with
-                  contact email and small blurb instead
-                </li>
-                <li>Only link for Winter 2025 bulletin works</li>
-              </ul>
-            </details>
-          </div>
-        </div>
+            <!-- wins -->
+            <div class="section" id="" wins>
+                <h2 class="section-label">
+                    <span class="bar"></span>Wins This Week
+                </h2>
+                <div class="card">
+                    <div class="iconBox">✨</div>
+                    <div>
+                        <h3>CTVB on Web Server</h3>
+                        <p>
+                            CTVB pages for Winter 2025 bulletin, and the main
+                            page has been transferred to the web server with all
+                            the same content!
+                        </p>
+                        <details>
+                            <summary>Additional Notes</summary>
+                            <ul>
+                                <li>
+                                    Bottom survey form removed for simplicity -
+                                    replaced with contact email and small blurb
+                                    instead
+                                </li>
+                                <li>
+                                    Only link for Winter 2025 bulletin works
+                                </li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
 
-        <!-- <div class="card">
-          <div class="iconBox">📜</div>
-          <div>
-            <h3>Table Add-ons for Decadal Interface</h3>
-            <p>
-              Added the interactive interface for users to switch between
-              comparing Ensemble Percentile and Time of Year in the table. Still
-              room for future development in adding additional table
-              interactions.
-            </p>
-            <details>
-              <summary>Additional Notes</summary>
-              <ul>
-                <li>created new functions to cache time of year data</li>
-                <li>
-                  made sure that table interactions don't interfere with
-                  displaying data in the popup labels on the map
-                </li>
-                <li>
-                  cross checked data to make sure it is being displayed properly
-                </li>
-              </ul>
-            </details>
-          </div>
-        </div> -->
+                <div class="card">
+                    <div class="iconBox">📜</div>
+                    <div>
+                        <h3>Dynamic Exploration - Phase 1!</h3>
+                        <p>
+                            Set up a testing page that uses d3.js to display our
+                            decadal data dynamically on an SVG map. Uses JSON
+                            files to create a contour map that gets projected
+                            onto the SVG.
+                        </p>
+                        <details>
+                            <summary>Additional Notes</summary>
+                            <ul>
+                                <li>
+                                    still working on improving the full
+                                    functionality (zooming and user
+                                    interactions) and understanding some other
+                                    d3.js features
+                                </li>
+                                <li>
+                                    only added datasets for certain default
+                                    options
+                                </li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
 
-        <!-- <div class="card">
+                <!-- <div class="card">
                 <div class="iconBox">✨</div>
                 <div>
                     <h3>Refactored Program</h3>
@@ -81,55 +91,71 @@
                     </details>
                 </div>
             </div> -->
-      </div>
+            </div>
 
-      <!-- in progress -->
-      <div class="section" id="progress">
-        <h2 class="section-label"><span class="bar"></span>In Progress</h2>
-        <div class="card">
-          <div class="iconBox">📈</div>
-          <div>
-            <div style="margin-top: 10px">Dynamic Interface Exploration</div>
-            <div class="progress">
-              <div class="progress-bar" style="width: 10%">10%</div>
+            <!-- in progress -->
+            <div class="section" id="progress">
+                <h2 class="section-label">
+                    <span class="bar"></span>In Progress
+                </h2>
+                <div class="card">
+                    <div class="iconBox">📈</div>
+                    <div>
+                        <div style="margin-top: 10px">
+                            Dynamic Interface Exploration
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 10%">
+                                10%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="iconBox">📈</div>
+                    <div>
+                        <div style="margin-top: 10px">
+                            Reviewing styling of web pages
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 90%">
+                                90%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="iconBox">📈</div>
+                    <div>
+                        <div style="margin-top: 10px">
+                            Overall updates to features in decadal forecasts
+                            page
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 50%">
+                                80%
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="iconBox">📈</div>
-          <div>
-            <div style="margin-top: 10px">Reviewing styling of web pages</div>
-            <div class="progress">
-              <div class="progress-bar" style="width: 70%">80%</div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="iconBox">📈</div>
-          <div>
-            <div style="margin-top: 10px">
-              Overall updates to features in decadal forecasts page
-            </div>
-            <div class="progress">
-              <div class="progress-bar" style="width: 50%">80%</div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- blockers -->
-      <div class="section" id="blockers">
-        <h2 class="section-label"><span class="bar"></span>Blockers</h2>
-        <div class="card">
-          <div class="iconBox">⚠️</div>
-          <div>
-            <p>No issues for now :)</p>
-            <!-- <ul>
-                        <li>some issues making the table headers dynamic depending on the choice of comparison (ensemble, time period, time of year)</li>
-                    </ul> -->
-          </div>
+            <!-- blockers -->
+            <div class="section" id="blockers">
+                <h2 class="section-label"><span class="bar"></span>Blockers</h2>
+                <div class="card">
+                    <div class="iconBox">⚠️</div>
+                    <div>
+                        <!-- <p>No issues for now :)</p> -->
+                        <ul>
+                            <li>
+                                Zooming onto each province of the map SVG does
+                                not work as intended
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>
