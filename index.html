@@ -11,7 +11,7 @@
         <div class="wrap">
             <!-- heading  -->
             <div class="head">
-                <h1 class="title">Weekly Update: Ariel - Week of March 8th</h1>
+                <h1 class="title">Weekly Update: Ariel - Week of March 15th</h1>
                 <p class="subtitle">Summary of progress :D</p>
                 <div class="rule"></div>
             </div>
@@ -24,33 +24,40 @@
                 <div class="card">
                     <div class="iconBox">✨</div>
                     <div>
-                        <h3>Full Functionality for D3 Decadal Map (Phase 1)</h3>
+                        <h3>Local FastAPI Setup</h3>
                         <p>
-                            Fixed bugs from last week so that the dynamic map on
-                            decadal-d3-new is fully functional and user
-                            friendly.
+                            Was able to install and run a FastAPI project
+                            locally to test features and API service
+                            functionality for slicing data more dynamically. Set
+                            up the backend and frontend to mimic the decadal
+                            page.
                         </p>
                         <details>
                             <summary>Additional Notes</summary>
                             <ul>
                                 <li>
-                                    Markers can be placed with correct lat/lon
-                                    and data values displayed.
+                                    Same dynamic D3 map interface as Dynamic
+                                    Exploration 1
                                 </li>
                                 <li>
-                                    Zooming features are fully functional
-                                    depending on nav or edit mode.
+                                    Map is now rendered through dynamic fetching
+                                    of data from API - no JSON 2D grids stored
+                                    in database, only the NetCDFs
                                 </li>
                                 <li>
-                                    Fixed bugs with zooming behaviour while
-                                    adding markers, and marker naming issue.
+                                    Slight delay to render maps when new dataset
+                                    settings are selected
+                                </li>
+                                <li>
+                                    Program and setup/installation guide all
+                                    uploaded and shared in Gitlabs repo
                                 </li>
                             </ul>
                         </details>
                     </div>
                 </div>
 
-                <div class="card">
+                <!-- <div class="card">
                     <div class="iconBox">📜</div>
                     <div>
                         <h3>Dynamic Exploration 2 - PHP Endpoints</h3>
@@ -75,9 +82,9 @@
                             </ul>
                         </details>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="card">
+                <!-- <div class="card">
                     <div class="iconBox">✨</div>
                     <div>
                         <h3>Broken Link Web Scraper Detection</h3>
@@ -87,7 +94,7 @@
                             and checked each link and summarize if it was
                             actually broken, redirected, or fine.
                         </p>
-                        <!-- <details>
+                        <details>
                             <summary>Additional Notes</summary>
                             <ul>
                                 <li>
@@ -104,10 +111,10 @@
                                     Reduced the map script by around 300 lines
                                 </li>
                             </ul>
-                        </details> -->
+                        </details>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- in progress -->
             <div class="section" id="progress">
@@ -118,12 +125,11 @@
                     <div class="iconBox">📈</div>
                     <div>
                         <div style="margin-top: 10px">
-                            Dynamic Interface Exploration Phase 2.5? (FastAPI
-                            Research)
+                            Dynamic Interface Exploration Phase 3 (FastAPI)
                         </div>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 20%">
-                                20%
+                            <div class="progress-bar" style="width: 80%">
+                                80%
                             </div>
                         </div>
                     </div>
@@ -157,12 +163,12 @@
                 <div class="card">
                     <div class="iconBox">⚠️</div>
                     <div>
-                        <p>No issues for now :)</p>
-                        <!-- <ul>
+                        <!-- <p>No issues for now :)</p> -->
+                        <ul>
                             <li>
-                                Small outline around map SVG that is annoying?
+                                Could look into ways to fetch the datasets a bit faster? Preloading the default one still takes a second right now. Thinking about maybe just keeping that one static since it is the default one?
                             </li>
-                            <li>
+                            <!-- <li>
                                 When in "navigation mode", after being zoomed in
                                 on a province, double clicking somewhere else
                                 weirdly jumps to a completely separate region
@@ -173,8 +179,8 @@
                                 still registers as an added marker, so the next
                                 marker is named "Point n + 2" instead of "Point
                                 n + 1".
-                            </li>
-                        </ul> -->
+                            </li> -->
+                        </ul>
                     </div>
                 </div>
             </div>
