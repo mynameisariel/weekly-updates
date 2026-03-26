@@ -11,7 +11,7 @@
         <div class="wrap">
             <!-- heading  -->
             <div class="head">
-                <h1 class="title">Weekly Update: Ariel - Week of March 15th</h1>
+                <h1 class="title">Weekly Update: Ariel - Week of March 23rd</h1>
                 <p class="subtitle">Summary of progress :D</p>
                 <div class="rule"></div>
             </div>
@@ -24,49 +24,41 @@
                 <div class="card">
                     <div class="iconBox">✨</div>
                     <div>
-                        <h3>Local FastAPI Setup</h3>
+                        <h3>Comprehensive Demo to CMIP6 Team!</h3>
                         <p>
-                            Was able to install and run a FastAPI project
-                            locally to test features and API service
-                            functionality for slicing data more dynamically. Set
-                            up the backend and frontend to mimic the decadal
-                            page.
+                            Presented 4 working demos of dynamic interface
+                            options to the whole CMIP6 team on Tuesday :D
                         </p>
                         <details>
                             <summary>Additional Notes</summary>
                             <ul>
                                 <li>
-                                    Same dynamic D3 map interface as Dynamic
-                                    Exploration 1
+                                    introduced the different backend and
+                                    frontend options
                                 </li>
                                 <li>
-                                    Map is now rendered through dynamic fetching
-                                    of data from API - no JSON 2D grids stored
-                                    in database, only the NetCDFs
+                                    received feedback and suggestions from the
+                                    team
                                 </li>
-                                <li>
-                                    Slight delay to render maps when new dataset
-                                    settings are selected
-                                </li>
-                                <li>
-                                    Program and setup/installation guide all
-                                    uploaded and shared in Gitlabs repo
-                                </li>
+                                <li>worked on oral communication!</li>
                             </ul>
                         </details>
                     </div>
                 </div>
 
-                <!-- <div class="card">
+                <div class="card">
                     <div class="iconBox">📜</div>
                     <div>
-                        <h3>Dynamic Exploration 2 - PHP Endpoints</h3>
+                        <h3>Dynamic Exploration Takeaways Document</h3>
                         <p>
-                            Used a PHP script to fetch JSON grid data in the
-                            backend instead of downloading it in the frontend.
-                            Maintained same map rendering with D3.
+                            Summarized each dynamic interface option (frontend
+                            and backend) as well as their pros and cons. Listed
+                            the performance, development effort, complexity, and
+                            flexibility aspects for each one as a helpful
+                            overview for the team to eventually decide which one
+                            to use.
                         </p>
-                        <details>
+                        <!-- <details>
                             <summary>Additional Notes</summary>
                             <ul>
                                 <li>
@@ -80,21 +72,19 @@
                                     rather than file downloads
                                 </li>
                             </ul>
-                        </details>
+                        </details> -->
                     </div>
-                </div> -->
+                </div>
 
-                <!-- <div class="card">
+                <div class="card">
                     <div class="iconBox">✨</div>
                     <div>
-                        <h3>Broken Link Web Scraper Detection</h3>
+                        <h3>PD Course Assignment</h3>
                         <p>
-                            Ran the scraper provided to review any broken links
-                            on the CCDS site! Went through the CSV file created
-                            and checked each link and summarize if it was
-                            actually broken, redirected, or fine.
+                            Finished a few PD co-op course assignments this week
+                            :p (reflections and writing stuff)
                         </p>
-                        <details>
+                        <!-- <details>
                             <summary>Additional Notes</summary>
                             <ul>
                                 <li>
@@ -111,10 +101,10 @@
                                     Reduced the map script by around 300 lines
                                 </li>
                             </ul>
-                        </details>
+                        </details> -->
                     </div>
                 </div>
-            </div> -->
+            </div>
 
             <!-- in progress -->
             <div class="section" id="progress">
@@ -125,19 +115,20 @@
                     <div class="iconBox">📈</div>
                     <div>
                         <div style="margin-top: 10px">
-                            Dynamic Interface Exploration Phase 3 (FastAPI)
+                            Leaflet Dynamic Map Option
                         </div>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 80%">
-                                80%
+                            <div class="progress-bar" style="width: 70%">
+                                70%
                             </div>
                         </div>
                     </div>
                     <div>
                         <p>
-                            Looking into using FastAPI and Python to create an
-                            API that can directly slice data from NetCDFs and
-                            bypass need to create JSON grids.
+                            Overall map interface is finished, still working on
+                            adding various datasets in the correct grid format
+                            so that contour map overlay can change based on user
+                            selected settings.
                         </p>
                     </div>
                 </div>
@@ -166,7 +157,9 @@
                         <!-- <p>No issues for now :)</p> -->
                         <ul>
                             <li>
-                                Could look into ways to fetch the datasets a bit faster? Preloading the default one still takes a second right now. Thinking about maybe just keeping that one static since it is the default one?
+                                Not big blocker but trying to figure out Python
+                                script for converting NetCDFs into desired JS
+                                grid constants to be used as Leaflet contour map
                             </li>
                             <!-- <li>
                                 When in "navigation mode", after being zoomed in
