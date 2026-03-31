@@ -11,7 +11,7 @@
         <div class="wrap">
             <!-- heading  -->
             <div class="head">
-                <h1 class="title">Weekly Update: Ariel - Week of March 23rd</h1>
+                <h1 class="title">Weekly Update: Ariel - Week of March 29th</h1>
                 <p class="subtitle">Summary of progress :D</p>
                 <div class="rule"></div>
             </div>
@@ -118,8 +118,8 @@
                             Leaflet Dynamic Map Option
                         </div>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 70%">
-                                70%
+                            <div class="progress-bar" style="width: 80%">
+                                80%
                             </div>
                         </div>
                     </div>
@@ -133,11 +133,11 @@
                     </div>
                 </div>
 
-                <!-- <div class="card">
+                <div class="card">
                     <div class="iconBox">📈</div>
                     <div>
                         <div style="margin-top: 10px">
-                            Overall Dynamic Exploration
+                            Improvements to D3 Map Interface
                         </div>
                         <div class="progress">
                             <div class="progress-bar" style="width: 20%">
@@ -145,7 +145,21 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
+                    <div>
+                        <p>Features to add/improve:</p>
+                        <ul>
+                            <li>
+                                map capture - based on zoomed in area, overall
+                                map, with/without markers
+                            </li>
+                            <li>
+                                popup label cards (background for marker labels
+                                so that they are easier to read)
+                            </li>
+                            <li>enforce 10 marker limit</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
             <!-- blockers -->
@@ -157,9 +171,11 @@
                         <!-- <p>No issues for now :)</p> -->
                         <ul>
                             <li>
-                                Not big blocker but trying to figure out Python
-                                script for converting NetCDFs into desired JS
-                                grid constants to be used as Leaflet contour map
+                                converted datasets into JS grid format, but the
+                                map renders for only select setting
+                                combinations. the grid is invalid for some other
+                                combinations and i'm not sure why - in progress
+                                of debugging this
                             </li>
                             <!-- <li>
                                 When in "navigation mode", after being zoomed in
