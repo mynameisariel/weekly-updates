@@ -11,7 +11,7 @@
         <div class="wrap">
             <!-- heading  -->
             <div class="head">
-                <h1 class="title">Weekly Update: Ariel - Week of March 30th</h1>
+                <h1 class="title">Weekly Update: Ariel - Week of April 13th</h1>
                 <p class="subtitle">Summary of progress :D</p>
                 <div class="rule"></div>
             </div>
@@ -24,23 +24,47 @@
                 <div class="card">
                     <div class="iconBox">✨</div>
                     <div>
-                        <h3>Comprehensive Demo to CMIP6 Team!</h3>
+                        <h3>
+                            Add Pre-Existing Features to Dynamic Exploration 1
+                            Page
+                        </h3>
                         <p>
-                            Presented 4 working demos of dynamic interface
-                            options to the whole CMIP6 team on Tuesday :D
+                            Made the dynamic exploration page functionally the
+                            same as our current live decadal forecasts page.
                         </p>
                         <details>
                             <summary>Additional Notes</summary>
                             <ul>
                                 <li>
-                                    introduced the different backend and
-                                    frontend options
+                                    Added the search feature for markers to
+                                    place markers at specific cities and named
+                                    locations
+                                </li>
+                                <li>Added map download ability</li>
+                                <ul>
+                                    <li>
+                                        Default download-PNG downloads a canvas
+                                        with the SVG contour map + colour bar
+                                        and titles (both languages)
+                                    </li>
+                                    <li>
+                                        Download "edited version" downloads the
+                                        canvas in the state however the user has
+                                        edited it (zoomed in, with markers, etc)
+                                        + colour bar and titles
+                                    </li>
+                                </ul>
+                                <li>
+                                    Made table functional with newly placed
+                                    markers - displays point data values
+                                    properly with selected settings and
+                                    comparison mode
                                 </li>
                                 <li>
-                                    received feedback and suggestions from the
-                                    team
+                                    Could still improve styling but main
+                                    functionality exists - styling can be easily
+                                    updated in the future.
                                 </li>
-                                <li>worked on oral communication!</li>
                             </ul>
                         </details>
                     </div>
@@ -49,59 +73,62 @@
                 <div class="card">
                     <div class="iconBox">📜</div>
                     <div>
-                        <h3>Dynamic Exploration Takeaways Document</h3>
+                        <h3>Regional Analysis Option 1 (Province Regions)</h3>
                         <p>
-                            Summarized each dynamic interface option (frontend
-                            and backend) as well as their pros and cons. Listed
-                            the performance, development effort, complexity, and
-                            flexibility aspects for each one as a helpful
-                            overview for the team to eventually decide which one
-                            to use.
+                            Implemented provincial interactive regional analysis
+                            successfully on the map.
                         </p>
-                        <!-- <details>
+                        <details>
                             <summary>Additional Notes</summary>
                             <ul>
                                 <li>
-                                    parameter validation for user selected
-                                    settings
+                                    Additional "regional analysis" mode added to
+                                    map toolbar
                                 </li>
                                 <li>
-                                    page still has exact same functionality, the
-                                    data overlay of the map is just created
-                                    through a request from the PHP endpoints
-                                    rather than file downloads
+                                    Used Canada mask to generate individual
+                                    province masks.
+                                </li>
+                                <li>
+                                    Created the RegionManager class to manage
+                                    provincial regions and dynamically compute
+                                    stats (mean, median, std deviation, etc)
+                                </li>
+                                <li>
+                                    All computation and loading happening in
+                                    frontend with Javascript still
+                                </li>
+                                <li>
+                                    Separate table at bottom added for
+                                    displaying stats as each region is selected.
                                 </li>
                             </ul>
-                        </details> -->
+                        </details>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="iconBox">✨</div>
                     <div>
-                        <h3>PD Course Assignment</h3>
+                        <h3>V2 Decadal Forecasts Wiki Page</h3>
                         <p>
-                            Finished a few PD co-op course assignments this week
-                            :p (reflections and writing stuff)
+                            Documented the newest updates made to V2 of the
+                            decadal forecasts page. Described new file structure
+                            and interface in comparison to V1.
                         </p>
-                        <!-- <details>
-                            <summary>Additional Notes</summary>
+                        <details>
+                            <summary>Main New Features Added</summary>
                             <ul>
+                                <li>Zooming buttons</li>
                                 <li>
-                                    Added a canvas-config file that defined all
-                                    configuration dimensions and variables in
-                                    the map download
+                                    Flexible map download to render titles
+                                    French and English dynamically and reduce
+                                    clutter on page without both French and
+                                    English titles
                                 </li>
-                                <li>
-                                    Updated the components script to have more
-                                    dynamic and modularized functions that are
-                                    used in the map script
-                                </li>
-                                <li>
-                                    Reduced the map script by around 300 lines
-                                </li>
+                                <li>Interactive table to compare values</li>
                             </ul>
-                        </details> -->
+                        </details>
                     </div>
                 </div>
             </div>
@@ -114,21 +141,18 @@
                 <div class="card">
                     <div class="iconBox">📈</div>
                     <div>
-                        <div style="margin-top: 10px">
-                            Leaflet Dynamic Map Option
-                        </div>
+                        <div style="margin-top: 10px">Regional Analysis</div>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 80%">
-                                80%
+                            <div class="progress-bar" style="width: 50%">
+                                50%
                             </div>
                         </div>
                     </div>
                     <div>
                         <p>
-                            Overall map interface is finished, still working on
-                            adding various datasets in the correct grid format
-                            so that contour map overlay can change based on user
-                            selected settings.
+                            Provincial regional analysis complete, but still
+                            need to figure out Option 2 - implementing more
+                            regions with custom shapefiles
                         </p>
                     </div>
                 </div>
@@ -137,7 +161,7 @@
                     <div class="iconBox">📈</div>
                     <div>
                         <div style="margin-top: 10px">
-                            Improvements to D3 Map Interface
+                            V3 Dynamic Exploration Documentation
                         </div>
                         <div class="progress">
                             <div class="progress-bar" style="width: 20%">
@@ -145,7 +169,7 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <!-- <div>
                         <p>Features to add/improve:</p>
                         <ul>
                             <li>
@@ -158,7 +182,7 @@
                             </li>
                             <li>enforce 10 marker limit</li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -171,11 +195,8 @@
                         <!-- <p>No issues for now :)</p> -->
                         <ul>
                             <li>
-                                converted datasets into JS grid format, but the
-                                map renders for only select setting
-                                combinations. the grid is invalid for some other
-                                combinations and i'm not sure why - in progress
-                                of debugging this
+                                figuring out the shapefile --> mask pipeline,
+                                then implementing these regions into the D3 map
                             </li>
                             <!-- <li>
                                 When in "navigation mode", after being zoomed in
